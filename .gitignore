@@ -1,0 +1,27 @@
+# PlatformIO specific files
+*.pio/
+.vscode/
+*.elf
+*.map
+*.hex
+*.bin
+*.eep
+*.d
+*.o
+*.a
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
