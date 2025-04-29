@@ -69,5 +69,9 @@ This project uses the following libraries:
 3. **EEPROM**  
    Built into the Arduino IDE for reading and writing to the EEPROM.
 
+## Related Projects
+
+- [SquarewaveGenerator](https://github.com/varsa88/SquarewaveGenerator): A simple Arduino program for generating square wave signals with adjustable frequency via serial input using Timer1.
+
 ## License
 This project is licensed under the MIT License.
