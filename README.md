@@ -48,7 +48,7 @@ For a motorcycle with an 18-inch rear wheel:
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/MotorcycleSpeedCalibrator.git
+   git clone https://github.com/varsa88/MotorcycleSpeedCalibrator.git
 2. Open the project in the Arduino IDE.
 3. Install the required libraries:
    - [TimerOne](https://github.com/PaulStoffregen/TimerOne) 
