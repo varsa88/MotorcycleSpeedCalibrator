@@ -15,9 +15,8 @@ The system reads the square wave signal from the motorcycle's speed sensor, proc
 ![Enclosure](images/enclosure.jpg)
 
 ### Circuit Overview
-- **Input Side**: Uses a PC901V opto-isolator to safely interface with the motorcycle's speed sensor.
-- **Output Side**: Outputs a calibrated square wave signal back to the motorcycle's system.
-- **Optional Noise Filtering**: Includes capacitors to reduce noise on both input and output sides.
+- **Input Side**: Uses a PC901V opto-isolator to safely interface with the motorcycle's NPN inductive speed sensor. The sensor signal is connected directly to the cathode of the optocoupler, while the anode is connected to a 1kΩ resistor in series with the 5V supply from the Arduino.
+- **Output Side**: Outputs a calibrated square wave signal back to the motorcycle's system. Includes a pull-up resistor and optional noise filtering capacitor.
 
 #### PCB Topside
 ![PCB Topside](images/pcb_topside.jpg)
@@ -49,14 +48,15 @@ For a motorcycle with an 18-inch rear wheel:
 1. Clone this repository:
    ```bash
    git clone https://github.com/varsa88/MotorcycleSpeedCalibrator.git
+   ```
 2. Open the project in the Arduino IDE.
 3. Install the required libraries:
    - [TimerOne](https://github.com/PaulStoffregen/TimerOne) 
    - [SimpleTimer](https://github.com/jfturcot/SimpleTimer) 
    - EEPROM (built into the Arduino IDE)
 4. Connect your Arduino to your computer.
-5. Upload the main.cpp code to your Arduino board.
-6. Assemble the circuit as described in the comments of main.cpp.
+5. Upload the `main.cpp` code to your Arduino board.
+6. Assemble the circuit as described in the comments of `main.cpp`.
 7. Open the Serial Monitor in the Arduino IDE (set to 9600 baud) to configure and test the system.
 
 ## Dependencies
